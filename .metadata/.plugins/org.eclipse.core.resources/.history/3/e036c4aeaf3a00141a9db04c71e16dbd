@@ -37,7 +37,7 @@ var data = {
 				description: "I have a dog and his name is Romeo. Romeo is a small Yorkie and I had him for 3 years now.", 
 			},
 			{
-				title: "What is your favorite Movie?", 
+				title: "What is your favorite movie?", 
 				description: "This changes alot for me since I go to the movies alot wwith friends in my spare time but currently its Gardians of the Galaxy. I think the action combined with the humor makes it a really good movie and I would recomend it to anyone.", 
 			},
 			{
@@ -50,15 +50,15 @@ var data = {
 			},
 			{
 				title: "What is your favorite Song?", 
-				description: "This is a really hard one for me because I listen to music all the time and to many different genres, but if I really had to chose it would probably have to be Bleeding Out by Alex Clare", 
+				description: "This is a really hard one for me because I listen to music all the time and to many different genres, but if I really had to chose it would probably have to be Bleeding Out by ALex Clare", 
 			},
 			{
 				title: "Who is your favorite Actor?", 
 				description: "My favorite actor is Defenetly Liam Neeson. I am the biggest fan of action movies and I think he's in all of the best ones.", 
 			},
 			{
-				title: "What are your hobbies?", 
-				description: "I really enjoy art wether its drawing painting jewlery or ceramics I tried it all and have won competitions back in highschool for my ceramic pieces.", 
+				title: "What are your Hobbies?", 
+				description: "I really enjoy art wether its drawing painting jewlery or ceramics I tried it all and have won competitions back in highschool for my ceramics pieces.", 
 			},
 		]
 	}
@@ -132,12 +132,6 @@ var detail = function(data){
 			height: 200,
 	});
 	
-	var detailBack = Ti.UI.createView({
-			backgroundColor:"#922B2B",
-			top:205,
-			height: 200,
-	});
-	
 	//Opens the detailWindow in a Navigation window allowing the user to click back to go to the questions list again.
 	navWindow.openWindow(detailWindow);
 	
@@ -145,7 +139,7 @@ var detail = function(data){
 	
 	textBox.add(detailText);
 	detailTextBackground.add(textBox);
-	detailWindow.add(detailBack, detailTextBackground,questionBack, questionBox);
+	detailWindow.add(detailTextBackground,questionBack, questionBox);
 	
 };
 

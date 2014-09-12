@@ -1,7 +1,7 @@
 Titanium.UI.setBackgroundColor('#000');
 
 
-//Main screen text and views.
+
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#3d3d3e",
 	fullscreen: true,
@@ -59,18 +59,18 @@ var openQuestions = function(){
 };
 
 
-//Event listener for questions button.
+
 questionsPageButton.addEventListener("click", function(openData){
 	navWindow.openWindow(dataView);
 });
 
 
-// Puts main window into a navigation window. 
+
 var navWindow = Ti.UI.iOS.createNavigationWindow({
 	window: mainWindow,
 });
 
-//Links json.js to app.js
+
 var loadFile = require("json");
 
 
