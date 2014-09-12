@@ -41,11 +41,6 @@ var bottomBar = Ti.UI.createView({
 	height: 45,
 	
 });
-var questionsPageText = Ti.UI.createLabel({
-	text: "Questions",
-	color: "#fff",
-	font: {fontSize: 42, fontFamily: "Helvetica", fontWeight: "regular"},
-});
 
 var mainWindowLabel = Ti.UI.createLabel({
 	text: "1409 Ian Dorosh",
