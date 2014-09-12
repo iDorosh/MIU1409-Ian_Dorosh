@@ -35,6 +35,12 @@ var background = Ti.UI.createView({
 	height: 100,
 });
 
+var bottomBar = Ti.UI.createView({
+	bottom: 0,
+	backgroundColor: "dcdcdc",
+	height: 45,
+	
+});
 var questionsPageText = Ti.UI.createLabel({
 	text: "Questions",
 	color: "#fff",
@@ -44,20 +50,9 @@ var questionsPageText = Ti.UI.createLabel({
 var mainWindowLabel = Ti.UI.createLabel({
 	text: "1409 Ian Dorosh",
 	color: "#fff",
-	bottom: 20,
+	bottom: 60,
 	font: {fontSize: 12, fontFamily: "Helvetica", fontWeight: "light"},
 });
-
-var openQuestions = function(){	
-	var questionsView = Ti.UI.createWindow({
-		title: "Questions",
-		backgroundColor: "#fff",
-		fullscreen: true,
-		
-	});
-	navWindow.openWindow(questionsView);
-};
-
 
 //Event listener for questions button.
 questionsPageButton.addEventListener("click", function(openData){
@@ -75,7 +70,7 @@ var loadFile = require("json");
 
 
 questionsPageButton.add(questionsPageText);
-mainWindow.add(about,me, background, questionsPageButton, mainWindowLabel);
+mainWindow.add(about,me, background, questionsPageButton, mainWindowLabel, bottomBar);
 navWindow.open();
 
 
