@@ -1,0 +1,111 @@
+var data = {
+	"aboutMe":{
+		"headquestion": "About Me",
+		"cars": [
+			{
+				question: "What is Your Name", 
+				answer: "Ian Dorosh", 			
+			},
+			{
+				question: "Ferrari 458", 
+				answer: "Engine Size: 4.5L\nMSRP: $233,509\nMPG: 13 city, 17 highway\nHorsepower: 570\nTrims: 2 Door Coupe", 
+			},
+			{
+				question: "Porsche 911", 
+				answer: "Engine Size: 3.6L\nMSRP: $245,000\nMPG: 19 city, 27 highway\nHorsepower: 620\nTrims: GT2 RS, GT3 RS", 
+			},
+			{
+				question: "Nissan GTR",
+				answer: "Engine Size: 3.8L\nMSRP: $101,770\nMPG: 16 city, 23 highway\nHorsepower: 545 to 600\nTrims: Premium, Black Edition, Nismo",
+			},
+			{
+				question: "Rolls Royce Phantom", 
+				answer: "Engine Size: 6.8L\nMSRP: $474,990\nMPG: 11 city, 19 highway\nHorsepower: 453\nTrims: Base, Sedan", 
+			},
+			{
+				question: "Audi S7", 
+				answer: "Engine Size: 3.0L\nMSRP: $65,900\nMPG: 24 city, 38 highway\nHorsepower: 240 to 310\nTrims: 3.0 Premium Plus, 3.0T Premium Plus",
+			},
+			{
+				question: "BMW 7 Series", 
+				answer: "Engine Size: 3.0L, 4.4L, 6.0L\nMSRP: $74,000\nMPG: 19 city, 29 highway\nHorsepower: 255 to 535\nTrims: 740i, 740Li, 750Li", 
+			},
+		]
+	}
+};
+
+
+dataView = Ti.UI.createWindow({
+	question: "Questions",
+	backgroundColor: "#fff",
+	fullscreen: true,
+});
+	
+var cars = Ti.UI.createTableView({
+});
+
+
+
+if(Ti.Platform.name === "iPhone OS"){
+	cars.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+};
+
+	var superCarsSection = Ti.UI.createTableViewSection({
+		headerquestion: data.aboutMe.headquestion,
+	});
+
+var detail = function(data){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "#aeaeae",
+		fullscreen: true,
+	});
+	
+	var detailText = Ti.UI.createLabel({
+		text: data.desc,
+		font: {fontSize: 18, fontFamily: "AmericanTypewriter", fontWeight: "light"},
+		color: "#fff",
+	});
+	
+	var detailTextBackground = Ti.UI.createView({
+			backgroundColor:"#0c4375",
+			height: 200,
+			width: 300,
+	});
+	
+	var behindDetailTextBackground = Ti.UI.createView({
+			backgroundColor:"#128dff",
+			height: 190,
+			width: 307,
+	});
+	
+	navWindow.openWindow(detailWindow);
+	
+	
+	
+	detailTextBackground.add(detailText);
+	detailWindow.add(behindDetailTextBackground, detailTextBackground);
+	
+};
+
+for(var i=0, j=data.aboutMe.cars.length; i<j; i++){
+	var row = Ti.UI.createTableViewRow({
+		question: data.aboutMe.cars[i].question,
+		answer: data.aboutMe.cars[i].answer,
+		hasChild: true,
+	});
+	
+	if(Ti.Platform.name === "iPhone OS"){
+		row.hasChild = false;
+		row.hasDetail = true;
+	};
+	
+	superCarsSection.add(row);
+};
+
+cars.addEventListener("click", function(event){
+	detail(event.source);
+});
+
+var carsSections = [superCarsSection];
+cars.setData(carsSections);
+dataView.add(cars);

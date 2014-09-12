@@ -1,0 +1,79 @@
+Titanium.UI.setBackgroundColor('#000');
+
+
+
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#3d3d3e",
+	fullscreen: true,
+});
+
+var about = Ti.UI.createLabel({
+	text: "About",
+	color: "#fff",
+	top: 50,
+	left: 25,
+	font: {fontSize: 80, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+var me = Ti.UI.createLabel({
+	text: "Me",
+	color: "#fff",
+	top: 130,
+	right: 30,
+	font: {fontSize: 80, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+var questionsPageButton = Ti.UI.createView({
+	top: 300,
+	backgroundColor: "B73636",
+	height: 100,
+});
+
+var questionsPageText = Ti.UI.createLabel({
+	text: "Questions",
+	color: "#fff",
+	left: 30,
+	font: {fontSize: 24, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+var mainWindowLabel = Ti.UI.createLabel({
+	text: "1409 Ian Dorosh",
+	color: "#fff",
+	bottom: 20,
+	font: {fontSize: 12, fontFamily: "Helvetica", fontWeight: "light"},
+});
+
+var openQuestions = function(){	
+	var questionsView = Ti.UI.createWindow({
+		title: "Questions",
+		backgroundColor: "#fff",
+		fullscreen: true,
+		
+	});
+	navWindow.openWindow(questionsView);
+};
+
+
+
+questionsPageButton.addEventListener("click", function(openData){
+	navWindow.openWindow(dataView);
+});
+
+
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow,
+});
+
+
+var loadFile = require("questions");
+
+
+questionsPageButton.add(questionsPageText);
+mainWindow.add(about,me, questionsPageButton, mainWindowLabel);
+navWindow.open();
+
+
+
+
+

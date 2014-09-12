@@ -1,0 +1,350 @@
+!SESSION 2014-09-09 19:39:36.662 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/iDorosh/Documents/MIU1409-Ian_Dorosh -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-09-09 19:39:38.684
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-09-09 19:39:38.821
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:39:38.821
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:39:38.821
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-09 19:39:42.288
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-09-09 19:44:32.842 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/iDorosh/Documents/MIU1409-Ian_Dorosh -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-09-09 19:44:34.839
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-09-09 19:44:34.968
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:44:34.968
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:44:34.968
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-09 19:44:36.551
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-09-09 19:47:15.589
+!MESSAGE An internal error occurred during: "Update iOS info".
+!STACK 0
+java.lang.NullPointerException
+	at com.appcelerator.titanium.ios.core.IOSSDKLocator.parseTiInfo(IOSSDKLocator.java:236)
+	at com.appcelerator.titanium.ios.core.IOSSDKLocator.updateTiInfo(IOSSDKLocator.java:143)
+	at com.appcelerator.titanium.ios.core.IOSSDKLocator.access$0(IOSSDKLocator.java:140)
+	at com.appcelerator.titanium.ios.core.IOSSDKLocator$1.run(IOSSDKLocator.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-09 19:47:49.266 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/iDorosh/Documents/MIU1409-Ian_Dorosh -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-09-09 19:47:50.887
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-09-09 19:47:51.011
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:47:51.011
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-09 19:47:51.011
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-09 19:47:53.426
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+!SESSION 2014-09-11 19:06:56.369 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-09-11 19:06:59.324
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-09-11 19:06:59.480
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-11 19:06:59.480
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-11 19:06:59.480
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2014-09-11 19:07:02.653
+!MESSAGE Connection to http://download.appcelerator.com/appcelerator/studio/standalone/update/stable/p2.index failed on download.appcelerator.com. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.appcelerator.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:883)
+	at java.net.InetAddress.getAddressFromNameService(InetAddress.java:1236)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1187)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1117)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1053)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1074)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:621)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:657)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2014-09-11 19:07:02.918
+!MESSAGE Unknown Host: http://download.appcelerator.com/appcelerator/studio/standalone/update/stable/content.xml
+!STACK 0
+java.net.UnknownHostException: download.appcelerator.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1191)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1117)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1053)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:294)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 19:07:03.261
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+
+!ENTRY com.appcelerator.titanium.update.core 4 0 2014-09-11 19:07:34.575
+!MESSAGE (Build 3.3.0.201407100905) [ERROR] com.appcelerator.titanium.update.core/debug/sdk_update Error getting release lists from url 'https://api.appcelerator.com/p/v2/release-list?name=mobilesdk'
+!STACK 0
+java.net.UnknownHostException: api.appcelerator.com
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:223)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431)
+	at java.net.Socket.connect(Socket.java:527)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:570)
+	at com.sun.net.ssl.internal.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:141)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:163)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:424)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:538)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:276)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:172)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:923)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:158)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:234)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getReleaseListFromURL(TitaniumSDKUpdater.java:563)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getSDKReleases(TitaniumSDKUpdater.java:527)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.getLatestSDKRelease(TitaniumSDKUpdater.java:613)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasSDKUpdates(TitaniumSDKUpdater.java:266)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:229)
+	at com.appcelerator.titanium.update.core.TitaniumSDKUpdater.hasUpdates(TitaniumSDKUpdater.java:210)
+	at com.appcelerator.titanium.update.ui.TitaniumUpdateStartup.earlyStartup(TitaniumUpdateStartup.java:60)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2555)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-11 19:07:46.228 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2014-09-11 19:08:51.021
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-11 19:08:51.022
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-11 19:08:51.022
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-11 19:08:53.719
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
+
+!ENTRY com.appcelerator.titanium.core 4 0 2014-09-11 19:10:32.006
+!MESSAGE (Build 3.3.0.201407100905) [ERROR]  Connection refused
+!STACK 0
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:239)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431)
+	at java.net.Socket.connect(Socket.java:527)
+	at java.net.Socket.connect(Socket.java:476)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:163)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:424)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:538)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:214)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:300)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:319)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:987)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:923)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:841)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.resolveSDKRequirementsUrl(SDKInfoManager.java:253)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKRequirementsJSONURL(SDKInfoManager.java:220)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoJSON(SDKInfoManager.java:155)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoMap(SDKInfoManager.java:77)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getLatestSDKInfo(SDKInfoManager.java:116)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfo(SDKInfoManager.java:63)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationHelper.getVersionInfo(MobileSDKConfigurationHelper.java:93)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationProcessor.computeStatus(MobileSDKConfigurationProcessor.java:72)
+	at com.aptana.configurations.processor.AbstractConfigurationProcessor.getStatus(AbstractConfigurationProcessor.java:154)
+	at com.appcelerator.titanium.ui.portal.actionController.MobileSDKActionController$1.run(MobileSDKActionController.java:126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.core 4 0 2014-09-11 19:10:32.017
+!MESSAGE (Build 3.3.0.201407100905) [ERROR]  Connection refused
+!STACK 0
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:239)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431)
+	at java.net.Socket.connect(Socket.java:527)
+	at java.net.Socket.connect(Socket.java:476)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:163)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:424)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:538)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:214)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:300)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:319)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:987)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:923)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:841)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.resolveSDKRequirementsUrl(SDKInfoManager.java:253)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKRequirementsJSONURL(SDKInfoManager.java:220)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoJSON(SDKInfoManager.java:155)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoMap(SDKInfoManager.java:77)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getLatestSDKInfo(SDKInfoManager.java:116)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfo(SDKInfoManager.java:63)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationHelper.getVersionInfo(MobileSDKConfigurationHelper.java:93)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationProcessor.computeStatus(MobileSDKConfigurationProcessor.java:72)
+	at com.aptana.configurations.processor.AbstractConfigurationProcessor.getStatus(AbstractConfigurationProcessor.java:154)
+	at com.appcelerator.titanium.ui.portal.actionController.MobileSDKActionController$1.run(MobileSDKActionController.java:126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.core 4 0 2014-09-11 19:10:32.021
+!MESSAGE (Build 3.3.0.201407100905) [ERROR]  Connection refused
+!STACK 0
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:239)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431)
+	at java.net.Socket.connect(Socket.java:527)
+	at java.net.Socket.connect(Socket.java:476)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:163)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:424)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:538)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:214)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:300)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:319)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:987)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:923)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:841)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.resolveSDKRequirementsUrl(SDKInfoManager.java:253)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKRequirementsJSONURL(SDKInfoManager.java:220)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoJSON(SDKInfoManager.java:155)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoMap(SDKInfoManager.java:77)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getLatestSDKInfo(SDKInfoManager.java:116)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfo(SDKInfoManager.java:63)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationHelper.getVersionInfo(MobileSDKConfigurationHelper.java:93)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationProcessor.computeStatus(MobileSDKConfigurationProcessor.java:72)
+	at com.aptana.configurations.processor.AbstractConfigurationProcessor.getStatus(AbstractConfigurationProcessor.java:154)
+	at com.appcelerator.titanium.ui.portal.actionController.MobileSDKActionController$1.run(MobileSDKActionController.java:126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.core 4 0 2014-09-11 19:10:32.023
+!MESSAGE (Build 3.3.0.201407100905) [ERROR]  Connection refused
+!STACK 0
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:239)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:431)
+	at java.net.Socket.connect(Socket.java:527)
+	at java.net.Socket.connect(Socket.java:476)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:163)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:424)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:538)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:214)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:300)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:319)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:987)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:923)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:841)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1195)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:379)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.resolveSDKRequirementsUrl(SDKInfoManager.java:253)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKRequirementsJSONURL(SDKInfoManager.java:220)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoJSON(SDKInfoManager.java:155)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfoMap(SDKInfoManager.java:77)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getLatestSDKInfo(SDKInfoManager.java:116)
+	at com.appcelerator.titanium.core.internal.mobile.SDKInfoManager.getSDKInfo(SDKInfoManager.java:63)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationHelper.getVersionInfo(MobileSDKConfigurationHelper.java:93)
+	at com.appcelerator.titanium.ui.portal.processor.MobileSDKConfigurationProcessor.computeStatus(MobileSDKConfigurationProcessor.java:72)
+	at com.aptana.configurations.processor.AbstractConfigurationProcessor.getStatus(AbstractConfigurationProcessor.java:154)
+	at com.appcelerator.titanium.ui.portal.actionController.MobileSDKActionController$1.run(MobileSDKActionController.java:126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-09-12 09:52:25.627 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/iDorosh/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/iDorosh/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-09-12 09:52:28.416
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-09-12 09:52:28.586
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-12 09:52:28.586
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-09-12 09:52:28.586
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.osgi 2 1 2014-09-12 09:52:31.910
+!MESSAGE NLS missing message: LaunchAppToolbarContribution_NoSelectedProjects in: com.appcelerator.titanium.ui.messages
