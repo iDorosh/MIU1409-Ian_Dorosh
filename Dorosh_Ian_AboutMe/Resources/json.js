@@ -161,7 +161,7 @@ for(var i=0, j=data.aboutMe.questions.length; i<j; i++){
 
 //Using Event Propagation instead of making an event listener to every button.
 questions.addEventListener("click", function(event){
-	detail(event.source);
+	console.log(event.source);
 });
 
 var questionsSections = [questionsSection];
