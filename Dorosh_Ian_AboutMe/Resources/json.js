@@ -89,7 +89,7 @@ if(Ti.Platform.name === "iPhone OS"){
 
 // Function that will run when a question is chosen. This function contains all the information for my views and text.
 var detail = function(data){
-	//Creates window for my answers.
+	console.log(data);
 	var detailWindow = Ti.UI.createWindow({
 		title: "Answer",
 		backgroundColor: "#3d3d3e",

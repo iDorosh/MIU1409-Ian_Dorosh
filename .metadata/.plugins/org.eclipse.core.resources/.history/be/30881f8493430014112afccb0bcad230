@@ -1,0 +1,567 @@
+var data = {
+	"trips": [
+			{
+				title: "Bahamas", 
+				description: "Trip includes a amazing ocean view from the balcony of your 5 star hotel. The suites inlucde a kitchen, bathroom with jaccuzi and shower, along complemetry breakfest. Outside you will find resturants and 6 choices of pools or you can head over to our white sand beaches.", 
+				image: "images/vacation.jpg",	
+				length: "10 day trip to the Bahamas",
+				price: 340,	
+				people: 2,
+			},
+			{
+				title: "Jamaica", 
+				description: "Enjoy an all inclusive trip to Jamaica. You will experience a 4 star hotel with your own mini fridge that includes free beverages which are stocked daily. Breakfest, Lunch and Dinner are all included in the price of the trip, enjoy your choice of 9 resturants, pools and the beach.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/Jamaica.jpg",	
+				price: 800,
+				people: 1,
+			},
+			{
+				title: "Hawaii", 
+				description: "I live in Minnesota which is located in the Central Standard Time zone.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/Hawaii.jpg",	
+				price: 300,
+				people: 4,
+			},
+			{
+				title: "Alaska",
+				description: "I started getting into smartphones and computers at a very young age. I always wanted the latest and greatest wether it was smartphones, game consoles, or tablets, I was always facinated by technology.",
+				length: "10 day trip to the Bahamas",
+				image: "images/alaska.jpg",	
+				price: 1200,
+				people: 2,
+			},
+			{
+				title: "Norway", 
+				description: "At this point I am very comforatble with Java Script. Aside from school projects I have been creating my own apps to get to know Java Script as much as I can.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/norway.jpg",	
+				price: 1640,
+				people: 1,
+			},
+			{
+				title: "Paris", 
+				description: "For the most part Titanium Studio has become very familiar to me working on my own apps has helped alot I have learned features in Titanium that we have not yet covered in class like adding modules such as AdMob to my applications.",
+				length: "10 day trip to the Bahamas",
+				image: "images/paris.jpg",	
+				price: 1560,
+				people: 2,
+			},
+			{
+				title: "Italy", 
+				description: "My favrorite sport by far has to be Football. Our whole family gets together every Sunday to watch games. I love watching Vikings games since I am from MN but have lately started to enjoy watchin the Buccaneers because my brother in law is from Tampa. ", 
+				length: "10 day trip to the Bahamas",
+				image: "images/italy.jpg",	
+				price: 670,
+				people: 1,
+			},
+			{
+				title: "Spain", 
+				description: "I have a dog and his name is Romeo. Romeo is a small Yorkie and I had him for 3 years now.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/spain.jpg",	
+				price: 3450,
+				people: 2,
+			},
+			{
+				title: "Florida", 
+				description: "This changes alot for me since I go to the movies alot wwith friends in my spare time but currently its Gardians of the Galaxy. I think the action combined with the humor makes it a really good movie and I would recomend it to anyone.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/florida.jpg",	
+				price: 456,
+				people: 2,
+			},
+			{
+				title: "Germany", 
+				description: "One of my favorite books has to be The Martian. I don't read many books I tend to listen to them on Audible but read this one because it was a gift, and it was a really good book without any dull moments.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/germany.jpg",	
+				price: 450,
+				people: 1,
+			},
+			{
+				title: "England", 
+				description: "My favorite show is probably Game of Thrones but I bet everyone says that so I'm going with Suits instead. Suits is a great show about lawyers and what makes it a very great show is that its funny while being serious and I am a big fan of those type of shows.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/london.jpg",	
+				price: 540,
+				people: 4,
+			},
+			{
+				title: "Cancun", 
+				description: "This is a really hard one for me because I listen to music all the time and to many different genres, but if I really had to chose it would probably have to be Bleeding Out by Alex Clare", 
+				length: "10 day trip to the Bahamas",
+				image: "images/cancun.jpg",	
+				price: 670,	
+				people: 2,		
+			},
+			{
+				title: "Mexico", 
+				description: "My favorite actor is Defenetly Liam Neeson. I am the biggest fan of action movies and I think he's in all of the best ones.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/mexico.jpg",	
+				price: 900,
+				people: 1,
+			},
+			{
+				title: "Brazil", 
+				description: "I really enjoy art wether its drawing painting jewlery or ceramics I tried it all and have won competitions back in highschool for my ceramic pieces.", 
+				length: "10 day trip to the Bahamas",
+				image: "images/brazil.jpg",	
+				price: 300,
+				people: 1,
+			},
+		]
+};
+
+
+//New window to display all my questions
+dataView = Ti.UI.createWindow({
+	navBarHidden: true,
+	title: "Trips",
+	fullscreen: true,
+});
+
+var tabGroup = Titanium.UI.createTabGroup();
+var tab1 = Titanium.UI.createTab({  
+    icon:'icons/home.png',
+    title:'Home',
+    window:dataView,
+});	
+
+var search = Titanium.UI.createSearchBar({
+    barColor:'#8ac350', 
+    height:43,
+    top:0,
+    hintText: "Search Trips",
+});
+
+
+// Function that will run when a question is chosen. This function contains all the information for my views and text.
+var rowData = [];
+var detail = function(testing){
+	
+	var detailWindow = Ti.UI.createWindow({
+		title: testing.title,
+		backgroundColor: "#94bc5b",
+		fullscreen:true,
+		
+	});
+	
+	var bg1 = Ti.UI.createView({
+		top:180,
+		backgroundColor: "#efefef",
+		height: 115,
+	    width: "100%"
+	});
+	
+	var bg2 = Ti.UI.createView({
+		top: 310,
+		backgroundColor: "#efefef",
+		height: 200,
+	    width: "100%"
+	});
+
+	
+	var detailScroll = Ti.UI.createScrollView({
+		contentWidth: "auto",
+		contentHeight: "auto",
+		showVerticalScrollIndicator: true,
+		height: "100%",
+	    width: "100%"
+	});
+	
+	var questionsText = Ti.UI.createLabel({
+		text: testing.title,
+		font: {fontSize: 16, fontFamily: "Helvetica", fontWeight: "light"},
+		color: "#000",
+	});
+	
+	var quick = Ti.UI.createLabel({
+		top: bg2.top+10,
+		left: 15,
+		text: "Quick Overview",
+		font: {fontSize: 20, fontFamily: "Helvetiva", fontWeight: "light"},
+		color: "#94bc5b",
+	});
+	
+	
+	var body = Ti.UI.createLabel({
+		top: quick.top+30,
+		left: 15,
+		right:15,
+		text: testing.desc,
+		font: {fontSize: 16, fontFamily: "Helvetica", fontWeight: "light"},
+		color: "#60605f",
+	});
+	
+	var detailImage = Titanium.UI.createImageView({
+		top: 0,
+		image: testing.image,
+		height:180,
+		width:320,
+	});
+	
+	var length = Ti.UI.createLabel({
+		top: detailImage.top+190,
+		text: testing.length,
+		font: {fontSize: 20, fontFamily: "Helvetica", fontWeight: "bold"},
+		color: "#3a3a3b",
+		left: 15,
+	});
+	
+	var tripPrice = Ti.UI.createLabel({
+		top: length.top+30,
+		text: "$"+testing.price,
+		font: {fontSize: 20, fontFamily: "Helvetica", fontWeight: "light"},
+		color: "#94bc5b",
+		left: 15,
+	});
+	
+
+	var detailBars = Titanium.UI.createView({
+		backgroundColor: "#94bc5b",
+		top: 260,
+		height:1,
+		width:310,
+	});
+	
+	var numberPeople = Ti.UI.createLabel({
+		top: detailBars.top+8,
+		text: testing.people,
+		font: {fontSize: 16, fontFamily: "Helvetica", fontWeight: "light"},
+		color: "#94bc5b",
+		left: 70,
+	});
+	
+	var forAmount = Ti.UI.createLabel({
+		top: detailBars.top+8,
+		text: "Trip for",
+		font: {fontSize: 16, fontFamily: "Helvetica", fontWeight: "light"},
+		color: "#878885",
+		left: 13,
+	});
+	
+	detailScroll.add(bg1, detailImage, tripPrice,length, detailBars, numberPeople, forAmount, bg2, quick, body);
+	detailWindow.add(detailScroll);
+	tabGroup.activeTab.open(detailWindow);
+	
+	
+};
+
+
+
+for(var i=0, j=data.trips.length; i<j; i++){
+var img = Titanium.UI.createImageView({
+		image: data.trips[i].image,//The img property of the data array
+		height:180,
+		width:320,
+		title: data.trips[i].title,
+		desc: data.trips[i].description,
+		price: data.trips[i].price,
+		length: data.trips[i].length,
+		people: data.trips[i].people,
+		
+	});
+	
+	var bgBar = Titanium.UI.createView({
+		height:36,
+		width:"100%",
+		bottom:0,
+		left:0,
+		backgroundColor:"#96bd5e",
+	});
+	
+	var title = Titanium.UI.createLabel({
+		text: data.trips[i].title,//The title property of the data array
+		height:36,
+		width:"75%", //Ideally the screen width
+		bottom:0,
+		left:10,
+		color:"#FFFFFF",
+		textAlign:"left"
+	});
+
+	var amount = Titanium.UI.createLabel({
+		text:"$" + data.trips[i].price,//The amount property of the data array
+		height:36,
+		width:"25%",
+		bottom:0,
+		right:10,
+		color:"#FFFFFF",
+		textAlign:"right"
+	});
+	
+	//Create the row
+	var row = Titanium.UI.createTableViewRow({
+		searchFilter: data.trips[i].title,
+		desc: data.trips[i].description,
+		height:"auto",//Set the height of the row to auto so that it expands freely in the vertical direction
+		title: data.trips[i].title,
+	});
+	
+	//Add the views to the row
+	row.add(img);
+	row.add(bgBar);
+	row.add(title);
+	row.add(amount);
+	
+	
+	rowData.push(row);
+};
+
+var questions = Ti.UI.createTableView({
+	search: search,
+	filterAttribute: "searchFilter",
+	data: rowData,
+	
+});
+questions.setData(rowData);
+dataView.add(questions);
+//Using Event Propagation instead of making an event listener to every button.
+questions.addEventListener("click", function(event){
+	detail(event.source);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var test = Titanium.UI.createWindow({  
+    title:'Account',
+    backgroundColor:'#000',
+    fullscreen: true,
+});
+
+var win2 = Titanium.UI.createWindow({  
+    title:'Account',
+    backgroundColor:'#000',
+    
+});
+var tab2 = Titanium.UI.createTab({  
+    icon:'icons/account.png',
+    title:'Account',
+    window:mainScreen,
+});
+
+var tab3 = Titanium.UI.createTab({  
+    icon:'icons/account.png',
+    title:'Account',
+    window:test,
+});
+
+tabGroup.addTab(tab1);  
+
+
+
+
+//Login Screen
+
+var createWin = Ti.UI.createWindow({
+	backgroundColor: "#efefef",
+	title: "Create Account",
+	fullscreen: true,
+	navBarHidden: true,
+});
+
+var createScroll = Ti.UI.createScrollView({
+		contentWidth: "auto",
+		contentHeight: "auto",
+		showVerticalScrollIndicator: true,
+		height: "100%",
+	    width: "100%"
+	});
+	
+	var tripifyCreate = Ti.UI.createLabel({
+		top: 40,
+		text: "Tripify",
+		color: "#94bc5b",
+		font: {fontSize: 64, fontFamily: "Helvetica", fontWeight: "bold"},
+	});
+	
+	var createBG = Ti.UI.createView({
+		top: 140,
+		backgroundColor: "#efefef",
+		height: 60,
+		width: 180,
+	});
+	
+	var createAccount = Ti.UI.createLabel({
+		text: "Create Account",
+		color: "#94bc5b",
+		font: {fontSize: 22, fontFamily: "Helvetica", fontWeight: "regular"},
+	});
+	
+	var createBars = Ti.UI.createView({
+		top: 170,
+		backgroundColor: "#94bc5b",
+		height: 1,
+		width: "240",
+	});
+	
+
+	var skipCreateButton = Ti.UI.createLabel({
+		text: "Trips",
+		top: 20,
+		right: 20,
+		color: "#94bc5b",
+		font: {fontSize: 18, fontFamily: "Helvetica", fontWeight: "regular"},
+	});
+	
+	
+	var createUserName = Titanium.UI.createTextField({
+		top:210,
+	    color: "#94bc5b",
+	    height:50,
+	    width:"240",
+	    borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, //This is a constant that can be used to style textfields in iOS
+	    hintText:"create username", //Hint text is displayed to the user before the field has been edited
+		autoCorrect: false,
+		autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	});
+	
+	var createPassword = Titanium.UI.createTextField({
+		top:270,
+	    color: "#94bc5b",
+	    height:50,
+	    width:"240",
+	    borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, //This is a constant that can be used to style textfields in iOS
+	    hintText:"create password", //Hint text is displayed to the user before the field has been edited
+		passwordMask:true,
+		autoCorrect: false,
+		autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	});
+	
+	var requierments = Ti.UI.createLabel({
+		text: "6-20 characters, no spaces",
+		top: createPassword.top+55,
+		left: 42,
+		color: "#b6b6b9",
+		font: {fontSize: 12, fontFamily: "Helvetica", fontWeight: "regular"},
+		
+	});
+	
+	var confirmPassword = Titanium.UI.createTextField({
+		top:350,
+	    color: "#94bc5b",
+	    height:50,
+	    width:"240",
+	    borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, //This is a constant that can be used to style textfields in iOS
+	    hintText:"confirm password",
+	    passwordMask:true,//Hint text is displayed to the user before the field has been edited
+	});
+	
+	var createButton = Ti.UI.createLabel({
+		top: confirmPassword.top+60,
+		text: "Create",
+		color: "#94bc5b",
+		font: {fontSize: 26, fontFamily: "Helvetica", fontWeight: "Lite"},
+	});
+
+	createBG.add(createAccount);
+	createScroll.add(tripifyCreate, skipCreateButton, createUserName, createBars, createBG, createPassword, confirmPassword, requierments, createButton);
+	createWin.add(createScroll);
+
+var trigger = true;
+var loginTrigger = function(){
+	if(trigger === true){
+		tabGroup.addTab(tab3); 
+	}else{
+		tabGroup.addTab(tab2); 
+	};
+};
+
+createButton.addEventListener("click", function(e){
+	if(createPassword.value === confirmPassword.value && createPassword.value !== ""){
+		tabGroup.open();
+		tabGroup.setActiveTab(0);
+		createWin.close();
+		createPassword.value = "";
+		createUserName.value = "";
+		confirmPassword.value = "";
+		
+		var b = Titanium.UI.createAlertDialog({
+	    title:"Welcome",
+	    message:"Thank you for signing up!",
+	});
+	b.show();
+	
+	} else{
+		var a = Titanium.UI.createAlertDialog({
+	    title:"Error",
+	    message:"Passwords don't match\nPlease try Again",
+	});
+		a.show();
+		};
+		data2.users[5].userName = userName.value;
+		data2.users[5].password = password.value;
+});
+
+skipCreateButton.addEventListener("click", function(e){
+	tabGroup.open();
+	tabGroup.setActiveTab(0);
+	createWin.close();
+});
+
+create.addEventListener("click", function(e){
+	createWin.open();
+	data2.users[5].userName = userName.value;
+	data2.users[5].password = password.value;
+});
+
+logInButton.addEventListener("click", function(e){
+	for(var i=0, j=data2.users.length; i<j; i++){	
+		 if(userName.value == data2.users[i].userName && password.value == data2.users[i].password && userName.value !== '' && password.value !== ''){
+		 	trigger = true;
+		 	tabGroup.open();
+		 	tabGroup.setActiveTab(0);
+				 	var c = Titanium.UI.createAlertDialog({
+					    title:"Welcome "+ userName.value,
+					    message:"Thank you for signing in",
+					});
+					password.value = "";
+					userName.value = "";
+					c.show();
+					
+		 }
+	};
+});
+
+  skipButton.addEventListener("click", function(openData){
+		trigger = false;
+		tabGroup.open();
+		tabGroup.setActiveTab(0);
+		createWin.close();
+});
+
+

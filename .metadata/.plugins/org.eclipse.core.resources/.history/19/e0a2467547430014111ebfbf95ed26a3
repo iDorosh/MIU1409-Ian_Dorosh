@@ -1,0 +1,145 @@
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
+
+var data2 = {
+	"users":[
+			{
+				userName: "iDorosh", 
+				password: "Doroshi", 		
+			},
+			{
+				userName: "JMiller", 
+				password: "Miller132", 			
+			},
+			{
+				userName: "AJohnson", 
+				password: "AliJ", 		
+			},
+			{
+				userName: "AlexDorosh", 
+				password: "doroalex", 		
+			},
+			{
+				userName: "LJefferson", 
+				password: "jefferson132", 	
+			},
+			{
+				userName: "", 
+				password:"", 	
+			},
+		]
+};
+
+var mainScreen = Ti.UI.createWindow({
+	backgroundColor: "#94bc5b",
+});
+
+var tripify = Ti.UI.createLabel({
+	top: 40,
+	text: "Tripify",
+	color: "fff",
+	font: {fontSize: 64, fontFamily: "Helvetica", fontWeight: "bold"},
+});
+
+var skipButton = Ti.UI.createLabel({
+	text: "Trips",
+	top: 20,
+	right: 20,
+	color: "#fff",
+	font: {fontSize: 18, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+var logInBG = Ti.UI.createView({
+	top: 140,
+	backgroundColor: "#94bc5b",
+	height: 40,
+	width: 90,
+});
+
+var logIn = Ti.UI.createLabel({
+	text: "Sign In",
+	color: "#fff",
+	font: {fontSize: 22, fontFamily: "Helvetica", fontWeight: "regular"},
+});
+
+var logInBars = Ti.UI.createView({
+	top: 160,
+	backgroundColor: "#fff",
+	height: 1,
+	width: "240",
+});
+
+var userName = Titanium.UI.createTextField({
+	top:210,
+    color: "#94bc5b",
+    height:50,
+    width:"240",
+    borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, //This is a constant that can be used to style textfields in iOS
+    hintText:"username", 
+    autoCorrect: false,//Hint text is displayed to the user before the field has been edited
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+});
+
+var password = Titanium.UI.createTextField({
+	top:280,
+    color: "#94bc5b",
+    height:50,
+    width:"240",
+    borderStyle:Titanium.UI.INPUT_BORDERSTYLE_ROUNDED, //This is a constant that can be used to style textfields in iOS
+    hintText:"password",
+    passwordMask:true,
+    autoCorrect: false,
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+});
+
+var logInButton = Ti.UI.createLabel({
+	top: password.top+60,
+	text: "Login",
+	color: "#fff",
+	font: {fontSize: 26, fontFamily: "Helvetica", fontWeight: "Lite"},
+});
+
+var bottomBars = Ti.UI.createView({
+	bottom: 70,
+	backgroundColor: "#fff",
+	height: 1,
+	width: "240",
+});
+
+var bottomBars2 = Ti.UI.createView({
+	bottom: 10,
+	backgroundColor: "#fff",
+	height: 55,
+	width: 1,
+});
+
+var create = Ti.UI.createLabel({
+	bottom: 23,
+	left: 60,
+	text: "Create",
+	color: "#fff",
+	font: {fontSize: 26, fontFamily: "Helvetica", fontWeight: "lite"},
+});
+
+var forgot = Ti.UI.createLabel({
+	bottom: 23,
+	right: 50,
+	text: "Forgot?",
+	color: "#fff",
+	font: {fontSize: 26, fontFamily: "Helvetica", fontWeight: "lite"},
+});
+
+
+
+
+
+
+
+
+var loadFile = require("json");
+
+logInBG.add(logIn),
+mainScreen.add(tripify, skipButton, logInBars, logInBG, userName, password, logInButton, bottomBars, bottomBars2, create, forgot);
+mainScreen.open();
+
+

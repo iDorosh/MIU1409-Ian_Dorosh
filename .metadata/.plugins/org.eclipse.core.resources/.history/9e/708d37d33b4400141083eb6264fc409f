@@ -1,0 +1,61 @@
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
+
+var data2 = {
+	"users":[
+			{
+				userName: "iDorosh", 
+				password: "Doroshi", 		
+			},
+			{
+				userName: "JMiller", 
+				password: "Miller132", 			
+			},
+			{
+				userName: "AJohnson", 
+				password: "AliJ", 		
+			},
+			{
+				userName: "AlexDorosh", 
+				password: "doroalex", 		
+			},
+			{
+				userName: "LJefferson", 
+				password: "jefferson132", 	
+			},
+			{
+				userName: "", 
+				password:"", 	
+			},
+		]
+};
+
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#94bc5b",
+	fullscreen: true,
+	navBarHidden: true,
+});
+
+var logInButtonHome = Ti.UI.createLabel({
+	top: 320,
+	text: "Login",
+	color: "#fff",
+	font: {fontSize: 28, fontFamily: "Helvetica", fontWeight: "Lite"},
+});
+
+var tripifyHome = Ti.UI.createLabel({
+	top: 140,
+	text: "Tripify",
+	color: "fff",
+	font: {fontSize: 80, fontFamily: "Helvetica", fontWeight: "bold"},
+});
+
+
+mainWindow.add(logInButtonHome,tripifyHome); 
+
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow,
+});
+
+var loadFile = require("json");
